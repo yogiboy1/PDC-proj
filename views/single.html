@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/materialize.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Single-Threaded Environment</title>
+</head>
+<body>
+    <h1 class="center-align">Single threaded environment <button class="btn btn-flat" id="benchmark">Benchmark</button></h1>
+    <div class="row hide" id="results">
+        <div class="col s12">
+            <h4 class="center-align">Visualisation</h4>
+            <div class="container">
+                <canvas id="chart"></canvas>
+            </div>
+        </div>
+        <div class="col s12">
+            <h4 class="center-align">Dataset :</h4>
+            <div class="container">
+                <div class="container">
+                    <pre id="code"></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="canvas-container">
+    </div>
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/materialize.min.js"></script>
+    <script src="../js/Chart.js"></script>
+    <script src="../js/imageManips.js"></script>
+    <script src="../js/imageProcess.js"></script>
+    <!--<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>-->
+    <script src="../js/single.js"></script>
+    <script>if (window.module) module = window.module;</script>
+</body>
+</html>

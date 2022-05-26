@@ -1,0 +1,7 @@
+.image{
+    width: 100% !important;
+}
+#code{
+    border: 2px solid black;
+    padding: 25px;
+}

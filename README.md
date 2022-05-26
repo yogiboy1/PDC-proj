@@ -13,3 +13,7 @@ core. The main purpose of multithreading is to provide simultaneous
 execution of two or more parts of a program to maximum utilize the 
 CPU time. Multi-threading has proved to be a very fast and reliable way 
 to perform computations
+
+##subheader 
+
+this is submitted for Parellel and Dynamic Computing course for j component requirement.

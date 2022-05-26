@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PDC Project - Analysis controller</title>
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h3 class="center-align">Controller</h3>
+    <div class="container">
+        <div class="card-panel">
+            <div class="row">
+                <div class="col s12">
+                    <div class="row">
+                        <div class="file-field input-field">
+                            <div class="btn">
+                                <span>File</span>
+                                <input type="file" id="imageLoader" name="imageLoader"/>
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row transform">
+                        <div class="input-field col s12">
+                            <select>
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="invert">Invert</option>
+                                <option value="chroma">Chroma</option>
+                                <option value="greyscale">Greyscale</option>
+                                <option value="vibrant">Vibrant</option>
+                            </select>
+                            <label>Image transformation :</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s3">
+                            <input id="sims" type="number">
+                            <label for="sims">Number of Simulations</label>
+                        </div>
+                        <div class="input-field col s9 center-align">
+                            <button id="start" class="btn">Start Simulation</button>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="col s12">
+                    <canvas id="image"></canvas>
+                </div>-->
+            </div>
+        </div>
+    </div>
+
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/controller.js"></script>
+    <script>if (window.module) module = window.module;</script>
+</body>
+</html>

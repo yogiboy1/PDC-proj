@@ -1,0 +1,17 @@
+{
+  "name": "Project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron-builder": "^19.43.4"
+  },
+  "dependencies": {
+    "electron": "^1.7.9"
+  }
+}
